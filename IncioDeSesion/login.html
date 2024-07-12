@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Login - CSMinds</title>
+  <script type="module" src=""></script>
+  <script nomodule src=""></script>
+  <link rel="stylesheet" href="./style.css">
+  <?php
+    include("InicioDeSesion.php");
+    include("conexion.php");
+   ?>
+</head>
+<body>
+    <section>
+        <form>
+            <h1>Login</h1>
+            <div class="inputbox">
+                <ion-icon name="username"></ion-icon>
+                <input type="username" id="username" name="Username" required placeholder="">
+                <label for="username">Usuario</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" id="password" name="Password" required placeholder="">
+                <label for="password">Contraseña</label>
+            </div>
+            <div class="forget">
+                <label><input type="checkbox"> Recordarme</label>
+                <a href="#">Olvide la Contraseña</a>
+            </div>
+            <button>Log in</button>
+            <div class="register">
+                <p>No tiene cuenta aun? <a href="./Registro.html">Registro</a></p>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
